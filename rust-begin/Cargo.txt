@@ -1,0 +1,23 @@
+Create A New Project:                                               cargo new
+Build The Project:                                                  cargo build
+Run The Project:                                                    cargo run
+Update Project Dependencies:                                        cargo update
+Run Test:                                                           cargo test 
+Generate The Project docs via rust doc:                             cargo doc
+Analyze the project to see it has any errors, without building it:  cargo check
+
+
+<--/    Publish the Project as a crate    /-->
+Log in to crate.io:                                 cargo login
+Make the local crate uploadedable to crate.io:      cargo package
+Upload the crate to crates.io:                      cargo publish
+
+
+⭐ A crate is a package which can be shared via cargo
+A crate can produce an executable or a library. In other words, it can be a binary crate or a library crate.
+    cargo new <crate_name> --bin  OR  cargo new <crate_name>
+    cargo new <crate_name> --lib
+
+
+💡 When we build a binary crate via ~ cargo build or cargo run, the executable file will be stored in target/debug/ folder.
+But when build it via ~ cargo build --release for a release it will be stored in target/release/ folder.
